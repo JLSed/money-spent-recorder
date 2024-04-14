@@ -1,0 +1,125 @@
+[gd_scene load_steps=7 format=3 uid="uid://81ah22up302c"]
+
+[ext_resource type="Script" path="res://script/spentHistory_panel.gd" id="1_c6nwv"]
+[ext_resource type="FontFile" uid="uid://knh470mnc23j" path="res://font/Poppins-800.ttf" id="1_nsfig"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3munf"]
+content_margin_left = 20.0
+content_margin_top = 0.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.90625, 0.863281, 0.800781, 1)
+border_width_bottom = 15
+border_color = Color(0.863281, 0.757813, 0.589844, 1)
+corner_radius_top_left = 45
+corner_radius_bottom_left = 45
+
+[sub_resource type="Animation" id="Animation_o4qgk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 180)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_npn5t"]
+resource_name = "entrance"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.25, 1),
+"update": 0,
+"values": [Vector2(0, 180), Vector2(1080, 180)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.25, 1),
+"update": 0,
+"values": [Vector2(1080, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oey12"]
+_data = {
+"RESET": SubResource("Animation_o4qgk"),
+"entrance": SubResource("Animation_npn5t")
+}
+
+[node name="Control" type="Control"]
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -2280.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c6nwv")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1080.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3munf")
+
+[node name="lblspent_amount" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 315.0
+offset_bottom = 184.0
+theme_override_colors/font_color = Color(0.878906, 0.566406, 0.5625, 1)
+theme_override_fonts/font = ExtResource("1_nsfig")
+theme_override_font_sizes/font_size = 70
+text = "-1,334"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lblspent_type" type="Label" parent="Panel/lblspent_amount"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = -8.0
+offset_right = 1080.0
+offset_bottom = 184.0
+theme_override_colors/font_color = Color(0.347656, 0.425781, 0.523438, 1)
+theme_override_fonts/font = ExtResource("1_nsfig")
+theme_override_font_sizes/font_size = 65
+text = "• Online Shopping"
+vertical_alignment = 1
+
+[node name="Entrance_Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_oey12")
+}

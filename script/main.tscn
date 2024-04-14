@@ -1,0 +1,1043 @@
+[gd_scene load_steps=37 format=3 uid="uid://u75brosvqv4p"]
+
+[ext_resource type="Script" path="res://script/main.gd" id="1_x51fd"]
+[ext_resource type="FontFile" uid="uid://fpoux7buguao" path="res://font/Figtree-900.ttf" id="2_lpu22"]
+[ext_resource type="FontFile" uid="uid://knh470mnc23j" path="res://font/Poppins-800.ttf" id="3_ucekx"]
+[ext_resource type="StyleBox" uid="uid://33ayqrvcc6v8" path="res://preset_design/monthbtn.tres" id="4_jshgi"]
+[ext_resource type="Texture2D" uid="uid://dib2s44q0o0oe" path="res://icons/settings_FILL0.png" id="4_san4u"]
+[ext_resource type="FontFile" uid="uid://xjmwuyl30sry" path="res://font/Poppins-Regular.ttf" id="4_wcpd2"]
+[ext_resource type="Texture2D" uid="uid://ceih6qkiwi8k" path="res://icons/add_FILL0_wght400_GRAD0_opsz24.png" id="6_vb4x0"]
+[ext_resource type="StyleBox" uid="uid://4043hap30006" path="res://preset_design/main.tres" id="7_eifsq"]
+[ext_resource type="StyleBox" uid="uid://bnuf2vjrfd47p" path="res://preset_design/buttonane.tres" id="8_rjas1"]
+
+[sub_resource type="Gradient" id="Gradient_mg4jn"]
+offsets = PackedFloat32Array(0, 0.987097)
+colors = PackedColorArray(0.395523, 0.327035, 0.605021, 1, 0.389812, 0.144535, 0.539426, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_b51ma"]
+gradient = SubResource("Gradient_mg4jn")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fsst0"]
+bg_color = Color(0.53125, 0.464844, 0.5625, 1)
+anti_aliasing_size = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6djw"]
+bg_color = Color(0.753906, 0.523438, 0.496094, 1)
+border_width_top = 10
+border_width_bottom = 10
+border_color = Color(0.945313, 0.886719, 0.765625, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rv4xi"]
+bg_color = Color(0.753906, 0.523438, 0.496094, 1)
+border_width_top = 500
+border_color = Color(0.752941, 0.521569, 0.498039, 0)
+border_blend = true
+anti_aliasing_size = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sq6t1"]
+bg_color = Color(0.527344, 0.679688, 0.648438, 1)
+border_width_top = 5
+border_width_bottom = 5
+border_color = Color(0.347656, 0.425781, 0.523438, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1jv4a"]
+bg_color = Color(0.518655, 0.671079, 0.642556, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 15
+border_color = Color(0.347656, 0.425781, 0.523438, 1)
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j33it"]
+bg_color = Color(0.527344, 0.679688, 0.648438, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 15
+border_color = Color(0.347656, 0.425781, 0.523438, 1)
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iw3py"]
+bg_color = Color(0.560784, 0.713726, 0.682353, 1)
+border_width_left = 10
+border_width_top = 5
+border_width_right = 10
+border_width_bottom = 25
+border_color = Color(0.347656, 0.425781, 0.523438, 1)
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ndu8"]
+bg_color = Color(0.560784, 0.6, 0.454902, 0)
+border_width_top = 5
+border_color = Color(0.347656, 0.425781, 0.519531, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+anti_aliasing = false
+anti_aliasing_size = 1.15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u20tu"]
+bg_color = Color(0.560784, 0.6, 0.454902, 0)
+border_width_bottom = 10
+border_color = Color(0.90625, 0.863281, 0.800781, 1)
+corner_radius_bottom_right = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b27ig"]
+bg_color = Color(0.560784, 0.6, 0.454902, 0)
+border_width_bottom = 10
+border_color = Color(0.90625, 0.863281, 0.800781, 1)
+corner_radius_bottom_right = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udp8c"]
+bg_color = Color(0.898039, 0.854902, 0.792157, 0)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.90625, 0.863281, 0.800781, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q687u"]
+bg_color = Color(0.898039, 0.854902, 0.792157, 0)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.90625, 0.863281, 0.800781, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fvrm"]
+bg_color = Color(0.898039, 0.854902, 0.792157, 0.345098)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.898438, 0.855469, 0.792969, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_feblx"]
+bg_color = Color(0.898039, 0.854902, 0.792157, 0)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.90625, 0.863281, 0.800781, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4clgd"]
+bg_color = Color(0.905882, 0.862745, 0.8, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7j45t"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="Animation" id="Animation_ytnt3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Front:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 284)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Front:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 2176)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Foreground:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 1820)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Foreground:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 640)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Ground:size")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 2460)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ground:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("front_shadow:size")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 21)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("front_shadow:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 2439)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Front/settings:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Front/settings:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Front/settings:size")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 2460)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Front/settings:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -2176)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Front/settings/change_money:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_63d53"]
+resource_name = "close_settings"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Front/settings:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Front/settings:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_hwa2e"]
+resource_name = "entry_placed_close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Front:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.15, 1),
+"update": 0,
+"values": [Vector2(1080, 1244), Vector2(1080, 284)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Front:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.15, 1),
+"update": 0,
+"values": [Vector2(0, 1216), Vector2(0, 2176)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("front_shadow:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(1080, 1874), Vector2(1080, 988)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("front_shadow:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(0, 586), Vector2(0, 1472)]
+}
+
+[sub_resource type="Animation" id="Animation_1vxbs"]
+resource_name = "first_enter"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Foreground:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 1),
+"transitions": PackedFloat32Array(0.2, 1),
+"update": 0,
+"values": [Vector2(1080, 284), Vector2(1080, 1820)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Foreground:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 1),
+"transitions": PackedFloat32Array(0.2, 1),
+"update": 0,
+"values": [Vector2(0, 2176), Vector2(0, 640)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Ground:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1, 1),
+"transitions": PackedFloat32Array(0.15, 1),
+"update": 0,
+"values": [Vector2(1080, 204), Vector2(1080, 2460)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Ground:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.1, 1),
+"transitions": PackedFloat32Array(0.15, 1),
+"update": 0,
+"values": [Vector2(0, 2256), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_hv2xe"]
+resource_name = "first_login_close"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Front/settings:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Front/settings:size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 2460)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Front/settings:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -2176)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Front/settings/change_money:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_ldr22"]
+resource_name = "new_entry_close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Front:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.15, 1),
+"update": 0,
+"values": [Vector2(1080, 1244), Vector2(1080, 284)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Front:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.15, 1),
+"update": 0,
+"values": [Vector2(0, 1216), Vector2(0, 2176)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("front_shadow:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.2, 1),
+"update": 0,
+"values": [Vector2(1080, 1874), Vector2(1080, 988)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("front_shadow:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.2, 1),
+"update": 0,
+"values": [Vector2(0, 586), Vector2(0, 1472)]
+}
+
+[sub_resource type="Animation" id="Animation_rleud"]
+resource_name = "new_entry_open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Front:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.15, 1),
+"update": 0,
+"values": [Vector2(1080, 284), Vector2(1080, 1244)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Front:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.15, 1),
+"update": 0,
+"values": [Vector2(0, 2176), Vector2(0, 1216)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("front_shadow:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(1080, 988), Vector2(1080, 1874)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("front_shadow:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Vector2(0, 1472), Vector2(0, 586)]
+}
+
+[sub_resource type="Animation" id="Animation_2blj8"]
+resource_name = "open_settings"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Front/settings:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Front/settings:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nahlj"]
+_data = {
+"RESET": SubResource("Animation_ytnt3"),
+"close_settings": SubResource("Animation_63d53"),
+"entry_placed_close": SubResource("Animation_hwa2e"),
+"first_enter": SubResource("Animation_1vxbs"),
+"first_login_close": SubResource("Animation_hv2xe"),
+"new_entry_close": SubResource("Animation_ldr22"),
+"new_entry_open": SubResource("Animation_rleud"),
+"open_settings": SubResource("Animation_2blj8")
+}
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x51fd")
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_b51ma")
+
+[node name="Ground" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fsst0")
+
+[node name="current_money" type="Label" parent="Ground"]
+layout_mode = 0
+offset_top = 296.0
+offset_right = 1080.0
+offset_bottom = 539.0
+theme_override_colors/font_color = Color(0.90625, 0.863281, 0.800781, 1)
+theme_override_fonts/font = ExtResource("2_lpu22")
+theme_override_font_sizes/font_size = 200
+text = "1,243"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Ground/current_money"]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 200.0
+offset_right = 733.0
+offset_bottom = 274.0
+theme_override_colors/font_color = Color(0.90625, 0.863281, 0.800781, 1)
+theme_override_fonts/font = ExtResource("3_ucekx")
+theme_override_font_sizes/font_size = 50
+text = "Current Money"
+
+[node name="Button" type="Button" parent="Ground"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 192.0
+offset_right = 696.0
+offset_bottom = 256.0
+theme_override_colors/font_color = Color(0.902344, 0.859375, 0.796875, 1)
+theme_override_fonts/font = ExtResource("2_lpu22")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("4_jshgi")
+theme_override_styles/hover = ExtResource("4_jshgi")
+theme_override_styles/pressed = ExtResource("4_jshgi")
+theme_override_styles/focus = ExtResource("4_jshgi")
+text = "APRIL, 2024"
+
+[node name="Foreground" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f6djw")
+
+[node name="Label" type="Label" parent="Foreground"]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 1080.0
+offset_bottom = 187.0
+theme_override_colors/font_color = Color(0.90625, 0.863281, 0.800781, 1)
+theme_override_fonts/font = ExtResource("2_lpu22")
+theme_override_font_sizes/font_size = 120
+text = "SPENT HISTORY"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Foreground"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 240.0
+offset_bottom = -372.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Foreground/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="Label2" type="Label" parent="Foreground"]
+layout_mode = 0
+offset_top = 16.0
+offset_right = 1080.0
+offset_bottom = 91.0
+theme_override_colors/font_color = Color(0.90625, 0.863281, 0.800781, 1)
+theme_override_fonts/font = ExtResource("2_lpu22")
+theme_override_font_sizes/font_size = 60
+text = "RECENT"
+horizontal_alignment = 1
+
+[node name="front_shadow" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2439.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rv4xi")
+
+[node name="Front" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2176.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sq6t1")
+
+[node name="btn_newEntry" type="Button" parent="Front"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = -104.0
+offset_right = 704.0
+offset_bottom = 216.0
+focus_mode = 0
+theme_override_constants/icon_max_width = 180
+theme_override_styles/normal = SubResource("StyleBoxFlat_1jv4a")
+theme_override_styles/hover = SubResource("StyleBoxFlat_j33it")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_iw3py")
+action_mode = 0
+icon = ExtResource("6_vb4x0")
+icon_alignment = 1
+expand_icon = true
+
+[node name="PnewEntry" type="Panel" parent="Front"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 304.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6ndu8")
+
+[node name="Label" type="Label" parent="Front/PnewEntry"]
+layout_mode = 0
+offset_top = 56.0
+offset_right = 1080.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(0.90625, 0.863281, 0.800781, 1)
+theme_override_fonts/font = ExtResource("2_lpu22")
+theme_override_font_sizes/font_size = 100
+text = "NEW ENTRY"
+horizontal_alignment = 1
+
+[node name="lneAmountSpent" type="LineEdit" parent="Front/PnewEntry"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 208.0
+offset_right = 1016.0
+offset_bottom = 398.0
+theme_override_colors/font_color = Color(0.894531, 0.851563, 0.789063, 1)
+theme_override_colors/font_placeholder_color = Color(0.905882, 0.862745, 0.8, 0.278431)
+theme_override_fonts/font = ExtResource("4_wcpd2")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_u20tu")
+theme_override_styles/focus = ExtResource("7_eifsq")
+placeholder_text = "Amount Spent"
+
+[node name="lneType" type="LineEdit" parent="Front/PnewEntry"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 416.0
+offset_right = 1016.0
+offset_bottom = 606.0
+theme_override_colors/font_color = Color(0.894531, 0.851563, 0.789063, 1)
+theme_override_colors/font_placeholder_color = Color(0.905882, 0.862745, 0.8, 0.27451)
+theme_override_fonts/font = ExtResource("4_wcpd2")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_b27ig")
+theme_override_styles/focus = ExtResource("7_eifsq")
+placeholder_text = "Type"
+
+[node name="btnAddNewEntry" type="Button" parent="Front/PnewEntry"]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 656.0
+offset_right = 1024.0
+offset_bottom = 784.0
+theme_override_colors/font_color = Color(0.894531, 0.851563, 0.789063, 1)
+theme_override_colors/font_focus_color = Color(0.894531, 0.851563, 0.789063, 1)
+theme_override_fonts/font = ExtResource("3_ucekx")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_udp8c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_q687u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5fvrm")
+theme_override_styles/focus = SubResource("StyleBoxFlat_feblx")
+text = "ADD"
+
+[node name="settings" type="Panel" parent="Front"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -2176.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="first_login" type="Panel" parent="Front/settings"]
+visible = false
+layout_mode = 0
+offset_left = 128.0
+offset_top = 968.0
+offset_right = 952.0
+offset_bottom = 1728.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4clgd")
+
+[node name="Label" type="Label" parent="Front/settings/first_login"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -356.0
+offset_bottom = -233.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5625, 0.601563, 0.453125, 1)
+theme_override_fonts/font = ExtResource("2_lpu22")
+theme_override_font_sizes/font_size = 100
+text = "WELCOME!"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Front/settings/first_login"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -228.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.53125, 0.464844, 0.5625, 1)
+theme_override_fonts/font = ExtResource("2_lpu22")
+theme_override_font_sizes/font_size = 45
+text = "PLEASE INPUT YOUR CURRENT
+ MONEY"
+horizontal_alignment = 1
+
+[node name="lnefirstloginmoney" type="LineEdit" parent="Front/settings/first_login"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 296.0
+offset_right = 800.0
+offset_bottom = 486.0
+theme_override_colors/font_color = Color(0.753906, 0.523438, 0.496094, 1)
+theme_override_colors/font_placeholder_color = Color(0.909804, 0.784314, 0.768627, 1)
+theme_override_fonts/font = ExtResource("3_ucekx")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = ExtResource("7_eifsq")
+theme_override_styles/focus = ExtResource("7_eifsq")
+placeholder_text = "Ex. 1234"
+alignment = 1
+
+[node name="btnfirstloginconfirm" type="Button" parent="Front/settings/first_login"]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 504.0
+offset_right = 792.0
+offset_bottom = 624.0
+theme_override_colors/font_color = Color(0.753906, 0.523438, 0.496094, 1)
+theme_override_colors/font_focus_color = Color(0.753906, 0.523438, 0.496094, 1)
+theme_override_fonts/font = ExtResource("3_ucekx")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("8_rjas1")
+theme_override_styles/hover = ExtResource("8_rjas1")
+theme_override_styles/pressed = ExtResource("8_rjas1")
+theme_override_styles/focus = ExtResource("8_rjas1")
+text = "CONFIRM"
+
+[node name="change_money" type="Panel" parent="Front/settings"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 968.0
+offset_right = 952.0
+offset_bottom = 1728.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4clgd")
+
+[node name="Label" type="Label" parent="Front/settings/change_money"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -356.0
+offset_bottom = -233.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5625, 0.601563, 0.453125, 1)
+theme_override_fonts/font = ExtResource("2_lpu22")
+theme_override_font_sizes/font_size = 100
+text = "SETTINGS"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Front/settings/change_money"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -160.0
+offset_bottom = -102.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.53125, 0.464844, 0.5625, 1)
+theme_override_fonts/font = ExtResource("2_lpu22")
+theme_override_font_sizes/font_size = 45
+text = "CHANGE CURRENT MONEY"
+horizontal_alignment = 1
+
+[node name="lnechangemoney" type="LineEdit" parent="Front/settings/change_money"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 296.0
+offset_right = 800.0
+offset_bottom = 486.0
+theme_override_colors/font_color = Color(0.753906, 0.523438, 0.496094, 1)
+theme_override_colors/font_placeholder_color = Color(0.909804, 0.784314, 0.768627, 1)
+theme_override_fonts/font = ExtResource("3_ucekx")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = ExtResource("7_eifsq")
+theme_override_styles/focus = ExtResource("7_eifsq")
+placeholder_text = "Ex. 1234"
+alignment = 1
+
+[node name="btnchangemoney" type="Button" parent="Front/settings/change_money"]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 504.0
+offset_right = 792.0
+offset_bottom = 624.0
+theme_override_colors/font_color = Color(0.753906, 0.523438, 0.496094, 1)
+theme_override_colors/font_focus_color = Color(0.753906, 0.523438, 0.496094, 1)
+theme_override_fonts/font = ExtResource("3_ucekx")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("8_rjas1")
+theme_override_styles/hover = ExtResource("8_rjas1")
+theme_override_styles/pressed = ExtResource("8_rjas1")
+theme_override_styles/focus = ExtResource("8_rjas1")
+text = "CONFIRM"
+
+[node name="settings" type="Button" parent="."]
+layout_mode = 0
+offset_left = 952.0
+offset_top = 24.0
+offset_right = 1050.0
+offset_bottom = 122.0
+theme_override_constants/icon_max_width = 90
+theme_override_styles/focus = SubResource("StyleBoxFlat_7j45t")
+icon = ExtResource("4_san4u")
+flat = true
+icon_alignment = 1
+
+[node name="Slide_Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nahlj")
+}
+
+[connection signal="pressed" from="Front/btn_newEntry" to="." method="_on_btn_new_entry_pressed"]
+[connection signal="pressed" from="Front/PnewEntry/btnAddNewEntry" to="." method="_on_btn_add_new_entry_pressed"]
+[connection signal="pressed" from="Front/settings/first_login/btnfirstloginconfirm" to="." method="_on_btnfirstloginconfirm_pressed"]
+[connection signal="pressed" from="Front/settings/change_money/btnchangemoney" to="." method="_on_btnchangemoney_pressed"]
+[connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
